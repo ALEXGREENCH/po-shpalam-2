@@ -1,0 +1,28 @@
+{
+  "episode": "po-shpalam-2-episode-01",
+  "include_files": [
+    "index.html",
+    "app.js",
+    "style.css",
+    "data.js",
+    "source.json",
+    "source.schema.json",
+    "README.txt",
+    "news.html",
+    "public-export.json",
+    "assets/studio-opening.webp",
+    "assets/studio-live.webp",
+    "assets/studio-closing.webp",
+    "assets/maddyson.webp",
+    "assets/khovansky.webp",
+    "assets/ponasenkov.webp"
+  ],
+  "include_directories": [],
+  "include_audio": "Only frame.audio paths from data.js whose matching source.json audio is moderated=true and review_status=approved, with matching file and source-text SHA-256 hashes.",
+  "exclude_files": [
+    "production.html",
+    "capture.html",
+    "capture.js"
+  ],
+  "note": "Explicit public allowlist. No directory recursion, private work files, capture interface, production page, or unreferenced audio."
+}

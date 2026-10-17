@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Три новости AI — По Шпалам 2</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111824;--card:#1a2433;--text:#f1eee8;--muted:#aebccc;--accent:#9ae4d3;--line:#344153}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+    main{max-width:850px;margin:auto;padding:56px 24px 42px}.eyebrow{margin:0 0 12px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(29px,5vw,43px);line-height:1.17;letter-spacing:-.035em;font-weight:750}.intro{color:var(--muted);margin:18px 0 32px;max-width:65ch}
+    article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin:18px 0}header{display:flex;gap:16px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+    .publisher{margin:0;color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}.date{margin:0;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+    h2{font-size:23px;line-height:1.3;letter-spacing:-.02em;margin:14px 0 16px}p{margin:12px 0}.facts{font-size:16px}.note{color:var(--muted);font-size:14px}.clarification{padding:13px 16px;border-left:3px solid var(--accent);background:#142e32;border-radius:0 8px 8px 0;font-size:15px}
+    .source{margin:20px 0 0;padding-top:15px;border-top:1px solid var(--line);font-size:14px}a{color:var(--accent);text-underline-offset:3px}a:hover{color:#fff}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px;border-radius:2px}
+    footer{color:var(--muted);font-size:12px;margin-top:26px}strong{font-weight:650}@media(max-width:520px){main{padding:32px 16px}article{padding:21px 19px;border-radius:12px}h2{font-size:21px}}
+    @media print{body{background:white;color:#111}main{max-width:none;padding:0}article{break-inside:avoid;background:white;border-color:#aaa}.intro,.date,.note,footer{color:#444}.publisher,a,.eyebrow{color:#155950}.clarification{background:#f2f8f6}a::after{content:" (" attr(href) ")";font-size:10px;overflow-wrap:anywhere}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">По Шпалам 2 · Выпуск 01</p>
+  <h1>Нейросети заменяют программистов?</h1>
+  <p class="intro">Три новости к обсуждению. Проверено по официальным публикациям на <time datetime="2026-10-17">17 октября 2026</time>; заявления компаний приведены с оговорками.</p>
+
+  <article aria-labelledby="argon">
+    <header><p class="publisher">Google Cloud</p><p class="date">Публикация и доступность: <time datetime="2026-10-13">13 октября 2026</time></p></header>
+    <h2 id="argon">Gemini 4 Argon: многошаговые задачи и оптимизация кода</h2>
+    <p class="facts">13 октября Google объявила доступность Gemini 4 Argon через Google Cloud, Google AI Studio и Google Antigravity для сложной многошаговой работы, включая разработку. Во внутреннем примере с Python ADK компания сообщает об оптимизациях, сокративших подготовку сессии в памяти на 40% и время холодного импорта на 21%, при работе агента под автоматическими тестами.</p>
+    <p class="clarification"><strong>Что измеряли:</strong> 40% и 21% — сокращение времени операций библиотеки, <strong>не экономия рабочего времени программиста</strong>.</p>
+    <p class="note"><strong>Оговорка.</strong> Это конкретный внутренний пример Google, а не независимо подтверждённое ускорение любого проекта. Дата относится к доступности на перечисленных платформах.</p>
+    <p class="source"><a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud">Источник: Google Cloud — анонс доступности Gemini 4 Argon ↗</a></p>
+  </article>
+
+  <article aria-labelledby="scion">
+    <header><p class="publisher">Anthropic · Инженерия</p><p class="date">Опубликовано <time datetime="2026-10-13">13 октября 2026</time> · обновлено <time datetime="2026-10-15">15 октября</time></p></header>
+    <h2 id="scion">Scion: инфраструктура не успевает за потоком кода</h2>
+    <p class="facts">13 октября Anthropic рассказала, что за пять месяцев полностью перевела свой монорепозиторий с Git на собственную систему Scion. По данным компании, количество сливаемых изменений выросло примерно с 2 500 в день в мае до более 30 000 в сентябре, и инфраструктура разработки стала ограничивать этот поток.</p>
+    <p class="note"><strong>Оговорка.</strong> Это внутренний опыт с необычно большим монорепозиторием и бюджетом на токены; количество изменений не равно полезности продукта. Scion не позиционируется как универсальная замена Git. Точный день завершения миграции не указан.</p>
+    <p class="source"><a href="https://www.anthropic.com/engineering/redesigning-source-control">Источник: Anthropic — Redesigning source control at Anthropic ↗</a></p>
+  </article>
+
+  <article aria-labelledby="juniors">
+    <header><p class="publisher">Anthropic · Исследование</p><p class="date">Отчёт опубликован <time datetime="2026-10-16">16 октября 2026</time></p></header>
+    <h2 id="juniors">Доля джуниоров в техническом найме снизилась</h2>
+    <p class="facts">16 октября Anthropic опубликовала внутреннее исследование: доля джуниоров среди технических наймов снизилась с 27% до 9%, одновременно с распространением AI-агентов. При этом технический найм в абсолютных числах продолжал расти, а компания описывает смещение человеческой работы к постановке задач, оценке результатов и управлению агентами.</p>
+    <p class="note"><strong>Оговорка.</strong> Это наблюдения одной компании за разными периодами 2025–2026 годов, а не статистика всего рынка. Причинная связь с AI не установлена; снижение доли найма не доказывает массовые увольнения.</p>
+    <p class="source"><a href="https://www.anthropic.com/research/employment-at-anthropic">Источник: Anthropic — How employment is changing at Anthropic ↗</a></p>
+  </article>
+
+  <footer>Редакторские пересказы первоисточников. Дата публикации отделена от даты описанных изменений; независимая проверка результатов компаний не заявляется.</footer>
+</main>
+</body>
+</html>
